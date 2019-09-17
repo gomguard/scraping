@@ -7,7 +7,7 @@ import os
 import time
 import csv
 import subprocess
-
+import datetime
 
 def fullpage_screenshot(driver, file):
         print("Starting chrome full page screenshot workaround ...")
@@ -74,7 +74,7 @@ def fullpage_screenshot(driver, file):
         return True
 
 
-subprocess.run(['test.py'], shell = True)
+# subprocess.run(['test.py'], shell = True)
 
 driver_path = 'C:/Users/kx682tw/Downloads/chromedriver.exe'
 options = webdriver.ChromeOptions()
@@ -86,19 +86,42 @@ options.add_argument("--start-maximized")
 # options.add_argument('--proxy-server=%s' % PROXY)
 
 ## open browser
-# browser = webdriver.Chrome(driver_path, chrome_options=options)
+browser = webdriver.Chrome(driver_path, chrome_options=options)
 
-f = open('C:/Users/kx682tw/Downloads/sea_url_list.csv')
+now = datetime.datetime.now()
+date = now.strftime('%Y%m%d')
+
+f = open('./url_list.csv', 'r', encoding = 'UTF-8')
 rdr = csv.reader(f)
-# for line in rdr:
-#     try:
-#         browser.get(line[0])
-#         fullpage_screenshot(browser, './{}.png'.format(line[1]))
-#     except:
-#         print('error : {}'.format(line[0]))
+
+for line in rdr:
+    print(line)
+
+    subsi = line[0]
+    account	 = line[1]
+    url = line[2]
+    mkt_name = line[3]
+    page_type = line[4]
+    slide_YN = line[5]
+    slide_path = line[6]
+    toolbar_YN	 = line[7]
+    toolbar_xpath = line[8]
+    click_YN = line[9]
+    click_xpath = line[10]
+    desc = line[11]
+    try:
+        browser.get(url)
+        if toolbar_YN == 'Y':
+            browser.find_element_by_xpath(toolbar_xpath).click()
+        if click_YN == 'Y':
+            browser.find_element_by_xpath(click_xpath).click()
+
+        fullpage_screenshot(browser, './{}/{}/{}_{}_{}.png'.format(subsi, date, account, page_type, mkt_name))
+    except:
+        print('error : {}'.format(line[0]))
 
 
-# browser.close()
+browser.close()
 
 ## click part
 # print('click')
