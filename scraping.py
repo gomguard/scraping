@@ -73,7 +73,6 @@ def fullpage_screenshot(driver, file):
         print("Finishing chrome full page screenshot workaround...")
         return True
 
-
 # subprocess.run(['test.py'], shell = True)
 
 driver_path = 'C:/Users/kx682tw/Downloads/chromedriver.exe'
@@ -86,7 +85,7 @@ options.add_argument("--start-maximized")
 # options.add_argument('--proxy-server=%s' % PROXY)
 
 ## open browser
-browser = webdriver.Chrome(driver_path, chrome_options=options)
+browser = webdriver.Chrome(driver_path, chrome_options = options)
 
 now = datetime.datetime.now()
 date = now.strftime('%Y%m%d')
@@ -109,12 +108,26 @@ for line in rdr:
     click_YN = line[9]
     click_xpath = line[10]
     desc = line[11]
+
     try:
         browser.get(url)
+        #browser.refresh()
         if toolbar_YN == 'Y':
+            print(toolbar_xpath)
             browser.find_element_by_xpath(toolbar_xpath).click()
+            print('remove toolbar')
+
         if click_YN == 'Y':
+            print(click_xpath)
             browser.find_element_by_xpath(click_xpath).click()
+            print('action click')
+
+        dir_path = './{}/{}'.format(subsi, date)
+        print(dir_path)
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
+            print("Directory ", dir_path, " Created ")
+
 
         fullpage_screenshot(browser, './{}/{}/{}_{}_{}.png'.format(subsi, date, account, page_type, mkt_name))
     except:
@@ -135,5 +148,3 @@ browser.close()
 # x_path = '//*[@id="main-content"]/div/div/ng-component/tmo-view-component/div/div/div/div/product-details-element/div[1]/div[2]/div/tmo-sku-picker/div/div[1]/div/button[2]'
 #
 # browser.find_element_by_xpath(x_path).click()
-
-
