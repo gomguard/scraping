@@ -8,7 +8,6 @@ import time
 import csv
 
 def fullpage_screenshot(driver, file):
-
         print("Starting chrome full page screenshot workaround ...")
 
         total_width = driver.execute_script("return document.body.offsetWidth")
@@ -72,17 +71,14 @@ def fullpage_screenshot(driver, file):
         print("Finishing chrome full page screenshot workaround...")
         return True
 
-verbose = 1
 driver_path = 'C:/Users/kx682tw/Downloads/chromedriver.exe'
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 
-
-#PROXY = "134.209.162.5:80"
-#PROXY = "166.78.221.222:8888"
-# US Proxy
-PROXY = "68.251.250.193:8080"
-options.add_argument('--proxy-server=%s' % PROXY)
+## proxy option
+# US Proxy : https://www.proxynova.com/proxy-server-list/country-us/
+# PROXY = "68.251.250.193:8080"
+# options.add_argument('--proxy-server=%s' % PROXY)
 
 browser = webdriver.Chrome(driver_path, chrome_options=options)
 
@@ -98,11 +94,8 @@ rdr = csv.reader(f)
 
 # browser.close()
 
-url = 'https://www.t-mobile.com/cell-phone/samsung-galaxy-note10-plus?sku=610214661630'
-
-url = 'https://www.sprint.com'
-browser.get(url)
-print('click')
+## click part
+# print('click')
 # browser.find_element_by_xpath('//*[@id="9f1a4688a6330a5fcacee51f8b6b220ae13b4af0"]/div[1]/div[2]/div[1]/a').click()
 #
 # x_path = '//*[@id="main-content"]/div/div/ng-component/tmo-view-component/div/div/div/div/product-details-element/div[1]/div[2]/div/tmo-sku-picker/div/div[1]/div/button[1]'
@@ -114,4 +107,4 @@ print('click')
 #
 # browser.find_element_by_xpath(x_path).click()
 
-print('click_comp')
+
