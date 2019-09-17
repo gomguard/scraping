@@ -1,6 +1,5 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
-import PIL
 from PIL import Image
 from io import StringIO
 import os
