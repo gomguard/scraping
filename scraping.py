@@ -6,6 +6,8 @@ from io import StringIO
 import os
 import time
 import csv
+import subprocess
+
 
 def fullpage_screenshot(driver, file):
         print("Starting chrome full page screenshot workaround ...")
@@ -71,6 +73,9 @@ def fullpage_screenshot(driver, file):
         print("Finishing chrome full page screenshot workaround...")
         return True
 
+
+subprocess.run(['test.py'], shell = True)
+
 driver_path = 'C:/Users/kx682tw/Downloads/chromedriver.exe'
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
@@ -80,7 +85,8 @@ options.add_argument("--start-maximized")
 # PROXY = "68.251.250.193:8080"
 # options.add_argument('--proxy-server=%s' % PROXY)
 
-browser = webdriver.Chrome(driver_path, chrome_options=options)
+## open browser
+# browser = webdriver.Chrome(driver_path, chrome_options=options)
 
 f = open('C:/Users/kx682tw/Downloads/sea_url_list.csv')
 rdr = csv.reader(f)
