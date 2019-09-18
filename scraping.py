@@ -102,13 +102,13 @@ rdr = csv.reader(f)
 for line in rdr:
     print(line)
     idx = line[0]
-    subsi	= line[1]
+    subsi = line[1]
     account = line[2]
     url = line[3]
     mkt_name = line[4]
     page_type = line[5]
     slide_YN = line[6]
-    slide_path	 = line[7]
+    slide_path = line[7]
     toolbar_YN = line[8]
     toolbar_xpath = line[9]
     click_YN = line[10]
