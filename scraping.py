@@ -7,6 +7,7 @@ import time
 import csv
 import subprocess
 import datetime
+import zipfile
 
 def fullpage_screenshot(driver, file):
         print("Starting chrome full page screenshot workaround ...")
@@ -16,7 +17,7 @@ def fullpage_screenshot(driver, file):
         total_height = driver.execute_script("return document.body.parentNode.scrollHeight")
         viewport_width = driver.execute_script("return document.body.clientWidth")
         viewport_height = driver.execute_script("return window.innerHeight")
-        print("Total: ({0}, {1}), Viewport: ({2},{3})".format(total_width, total_height,viewport_width,viewport_height))
+        # print("Total: ({0}, {1}), Viewport: ({2},{3})".format(total_width, total_height,viewport_width,viewport_height))
         # x-min, y-min, x-max, y-max
         rectangles = []
 
@@ -36,7 +37,7 @@ def fullpage_screenshot(driver, file):
                 if top_width > total_width:
                     top_width = total_width
 
-                print("Appending rectangle ({0},{1},{2},{3})".format(ii, i, top_width, top_height))
+                # print("Appending rectangle ({0},{1},{2},{3})".format(ii, i, top_width, top_height))
                 rectangles.append((ii, i, top_width,top_height))
 
                 ii = ii + viewport_width
@@ -51,11 +52,11 @@ def fullpage_screenshot(driver, file):
         for rectangle in rectangles:
             if not previous is None:
                 driver.execute_script("window.scrollTo({0}, {1})".format(rectangle[0], rectangle[1]))
-                print("Scrolled To ({0},{1})".format(rectangle[0], rectangle[1]))
+                # print("Scrolled To ({0},{1})".format(rectangle[0], rectangle[1]))
                 time.sleep(0.2)
 
             file_name = "part_{0}.png".format(part)
-            print("Capturing {0} ...".format(file_name))
+            # print("Capturing {0} ...".format(file_name))
 
             driver.get_screenshot_as_file(file_name)
             screenshot = Image.open(file_name)
@@ -65,7 +66,7 @@ def fullpage_screenshot(driver, file):
             else:
                 offset = (rectangle[0], rectangle[1])
 
-            print("Adding to stitched image with offset ({0}, {1})".format(offset[0],offset[1]))
+            # print("Adding to stitched image with offset ({0}, {1})".format(offset[0],offset[1]))
             stitched_image.paste(screenshot, offset)
 
             del screenshot
@@ -79,6 +80,7 @@ def fullpage_screenshot(driver, file):
 
 # subprocess.run(['test.py'], shell = True)
 
+subsi_zip_list = []
 driver_path = 'C:/Users/kx682tw/Downloads/chromedriver.exe'
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
@@ -99,23 +101,33 @@ rdr = csv.reader(f)
 
 for line in rdr:
     print(line)
+    idx = line[0]
+    subsi	= line[1]
+    account = line[2]
+    url = line[3]
+    mkt_name = line[4]
+    page_type = line[5]
+    slide_YN = line[6]
+    slide_path	 = line[7]
+    toolbar_YN = line[8]
+    toolbar_xpath = line[9]
+    click_YN = line[10]
+    click_xpath = line[11]
+    desc = line[12]
 
-    subsi = line[0]
-    account	 = line[1]
-    url = line[2]
-    mkt_name = line[3]
-    page_type = line[4]
-    slide_YN = line[5]
-    slide_path = line[6]
-    toolbar_YN	 = line[7]
-    toolbar_xpath = line[8]
-    click_YN = line[9]
-    click_xpath = line[10]
-    desc = line[11]
+    # filter idx
+    try:
+        if int(idx) < 58:
+            continue
+    except:
+        continue
+
+    print(idx)
 
     try:
         browser.get(url)
         #browser.refresh()
+
         try:
             if toolbar_YN == 'Y':
                 print(toolbar_xpath)
@@ -126,26 +138,60 @@ for line in rdr:
 
         try:
             if click_YN == 'Y':
-                for click_xp in click_xpath.split(','):
-                    print(click_xp)
-                    browser.find_element_by_xpath(click_xp).click()
+                click_xpath_list = click_xpath.split(',')
+                for click_xp in range(len(click_xpath_list)):
+                    print(click_xpath_list[click_xp])
+                    browser.find_element_by_xpath(click_xpath_list[click_xp]).click()
                 print('action click')
         except:
             print('click action error : {}'.format(click_xpath))
 
-        dir_path = './{}/{}'.format(subsi, date)
+            for click_xp_ex in click_xpath_list[click_xp:]:
+                time.sleep(3)
+                try:
+                    print('inner : {}'.format(click_xp_ex))
+
+                    driver.execute_script("window.scrollTo({0}, {1})".format(0, 0))
+                    browser.find_element_by_xpath(click_xp_ex).click()
+                except:
+                    continue
+                    print('ERROR-ERROR-CLICK-{}'.format(click_xp_ex))
+            print('click again')
+
+
+        dir_path = './shot/{}/{}'.format(subsi, date)
         print(dir_path)
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
             print("Directory ", dir_path, " Created ")
 
 
-        fullpage_screenshot(browser, './{}/{}/{}_{}_{}.png'.format(subsi, date, account, page_type, mkt_name))
+        fullpage_screenshot(browser, './shot/{}/{}/{}_{}_{}.png'.format(subsi, date, account, page_type, mkt_name))
+        subsi_zip_list.append(subsi)
+
     except:
         print('error : {}'.format(line[0]))
 
-
 browser.close()
+
+subsi_zip_list = list(set(subsi_zip_list))
+
+print(subsi_zip_list)
+
+for subsi in subsi_zip_list:
+    zip_path = './shot/{}_{}.zip'.format(subsi, date)
+    dir_path = './shot/{}/{}'.format(subsi, date)
+    print('zip_path : {}, dir_path : {}'.format(zip_path, dir_path))
+    fantasy_zip = zipfile.ZipFile(zip_path, 'w')
+
+    for folder, subfolders, files in os.walk(dir_path):
+        for file in files:
+            fantasy_zip.write(os.path.join(folder, file),
+                              os.path.relpath(os.path.join(folder, file), dir_path),
+                              compress_type=zipfile.ZIP_DEFLATED)
+
+    fantasy_zip.close()
+
 
 ## click part
 # print('click')
