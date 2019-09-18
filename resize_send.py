@@ -1,11 +1,5 @@
-from selenium import webdriver
-from bs4 import BeautifulSoup
-from PIL import Image
 from io import StringIO
-import os
 import time
-import csv
-import subprocess
 import datetime
 import os
 import zipfile
