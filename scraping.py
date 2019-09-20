@@ -96,7 +96,7 @@ browser = webdriver.Chrome(driver_path, chrome_options = options)
 now = datetime.datetime.now()
 date = now.strftime('%Y%m%d')
 
-f = open('./url_list.csv', 'r', encoding = 'UTF-8')
+f = open('./sea_url_list.csv', 'r', encoding = 'UTF-8')
 rdr = csv.reader(f)
 
 for line in rdr:
@@ -117,7 +117,7 @@ for line in rdr:
 
     # filter idx
     try:
-        if int(idx) < 58:
+        if int(idx) < 52:
             continue
     except:
         continue

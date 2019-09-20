@@ -1,0 +1,103 @@
+﻿idx,subsi,account,url,mkt_name,page_type,slide_YN,slide_path,toolbar_YN,toolbar_xpath,click_YN,click_xpath,desc
+1,SEA,VERIZON,https://www.verizonwireless.com/,KeyVisual,HP,,,,,,,
+2,SEA,VERIZON,https://www.verizonwireless.com/smartphones/,DeviceListing,SP,,,,,,,
+3,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11-pro-max/?sku=sku3640404,lo11ProMax_256gb_24_spacegray,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/p",storage select
+4,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11-pro-max/?sku=sku3640404,lo11ProMax_64gb_24_spacegray,SP,,,,,,,
+5,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11-pro-max/?sku=sku3640404,lo11ProMax_512gb_24_spacegray,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[3]/div/div/p",storage select
+6,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11-pro-max/?sku=sku3640404,lo11ProMax_online_promo,SP,,,,,Y,"//*[@id=""oneTimeActivation-icon""]",online promotion select
+7,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11-pro-max/?sku=sku3640404,lo11ProMax_promo,SP,,,,,Y,"//*[@id=""tile_container""]/div[2]/div[1]/div/div/div/span/a",promotion select
+8,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11-pro/?sku=sku3640419,lo11Pro_64gb_24_midnightgreen,SP,,,,,,,
+9,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11-pro/?sku=sku3640419,lo11Pro_256gb_24_midnightgreen,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div",256 storage select
+10,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11-pro/?sku=sku3640419,lo11Pro_512gb_24_midnightgreen,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[3]/div",512 storage select
+11,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11/?sku=sku3640430,lo11_64gb_24_midnightgreen,SP,,,,,,,
+12,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11/?sku=sku3640430,lo11_128gb_24_midnightgreen,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div",128 storage select
+13,SEA,VERIZON,https://www.verizonwireless.com/smartphones/apple-iphone-11/?sku=sku3640430,lo11_256gb_24_midnightgreen,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[3]/div",256 storage select
+14,SEA,VERIZON,https://www.verizonwireless.com/smartphones/samsung-galaxy-note-10-plus-5g/?sku=sku3600288,n10+5g_256gb_36_auraglow,SP,,,,,,,
+15,SEA,VERIZON,https://www.verizonwireless.com/smartphones/samsung-galaxy-note-10-plus-5g/?sku=sku3600288,n10+5g_256gb_24_auraglow,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[3]/div[1]/div/div[2]/div/div/div[1]/div/div[2]",24 eip select
+16,SEA,VERIZON,https://www.verizonwireless.com/smartphones/samsung-galaxy-note-10-plus-5g/?sku=sku3600288,n10+5g_256gb_retail_auraglow,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[3]/div[1]/div/div[2]/div/div/div[1]/div/div[3]",24 eip select
+17,SEA,VERIZON,https://www.verizonwireless.com/smartphones/samsung-galaxy-note-10-plus-5g/?sku=sku3600288,n10+5g_online_promo,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[3]/div[1]/div/div[2]/div/div/div[3]/div/a",online promotion select
+18,SEA,VERIZON,https://www.verizonwireless.com/smartphones/samsung-galaxy-note-10-plus-5g/?sku=sku3600288,n10+5g_promo,SP,,,,,Y,"//*[@id=""tile_container""]/div[2]/div[1]/div/div/div/span/a",promotion select
+19,SEA,VERIZON,https://www.verizonwireless.com/smartphones/samsung-galaxy-note-10-plus/?sku=sku3600275,n10+_256gb_24_aurablack,SP,,,,,,,
+20,SEA,VERIZON,https://www.verizonwireless.com/smartphones/samsung-galaxy-note-10-plus/?sku=sku3600275,n10+_512gb_24_aurablack,SP,,,,,Y,"//*[@id=""tile_container""]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div",512storage select
+21,SEA,VERIZON,https://www.verizonwireless.com/smartphones/samsung-galaxy-note-10/?sku=sku3600281,n10_256gb_24_aurablack,SP,,,,,Y,"//*[@id=""tile_container""]/div[2]/div[1]/div/div/div/span/a",promotion select
+22,SEA,ATT,https://www.att.com/,KeyVisual,HP,,,,,,,
+23,SEA,ATT,https://www.att.com/,KeyVisual_promotion,HP,,,,,Y,"//*[@id=""ALERT_BANNER1""]/div[2]/div/div/div/span/a",promotion select
+23,SEA,ATT,https://www.att.com/,KeyVisual_lo11_promotion,HP,,,,,Y,"//*[@id=""HERO_PANEL2""]/div[2]/div/div/span/a",promotion select
+24,SEA,ATT,https://www.att.com/buy/phones/,DeviceListing,SP,,,,,,,
+25,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-pro-max-64gb-midnight-green.html,lo11ProMax_64gb_30_spacegray,SP,,,,,,,
+26,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-pro-max-256gb-midnight-green.html,lo11ProMax_256gb_30_spacegray,SP,,,,,,,
+27,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-pro-max-512gb-midnight-green.html,lo11ProMax_512gb_30_spacegray,SP,,,,,,,
+28,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-pro-max-512gb-midnight-green.html,iPhone11_Promotion,SP,,,,,Y,"//*[@id=""__next""]/div[2]/div[1]/div/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/p/a,//*[@id=""accordion-control-specialOffersLegal""]",
+29,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-pro-64gb-midnight-green.html,lo11Pro_64gb_30_spacegray,SP,,,,,,,
+30,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-pro-256gb-midnight-green.html,lo11Pro_256gb_30_spacegray,SP,,,,,,,
+31,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-pro-512gb-midnight-green.html,lo11Pro_512gb_30_spacegray,SP,,,,,,,
+32,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-pro-512gb-midnight-green.html,lo11Pro_promo,SP,,,,,Y,"//*[@id=""__next""]/div[2]/div[1]/div/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/p/a",
+33,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-64gb-purple.html,lo11_64gb_30_purple,SP,,,,,,,
+34,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-128gb-purple.html,lo11_128gb_30_purple,SP,,,,,,,
+35,SEA,ATT,https://www.att.com/buy/phones/apple-iphone-11-256gb-purple.html,lo11_256gb_30_purple,SP,,,,,,,
+36,SEA,ATT,https://www.att.com/buy/phones/samsung-galaxy-note10-256gb-aura-glow.html,n10_256gb_36_auraglow,SP,,,,,,,
+37,SEA,ATT,https://www.att.com/buy/phones/samsung-galaxy-note10-256gb-aura-glow.html,n10_promo,SP,,,,,Y,"//*[@id=""__next""]/div[2]/div[1]/div/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/p/a",
+38,SEA,ATT,https://www.att.com/buy/phones/samsung-galaxy-note10-256gb-aura-glow.html,n10_promo_2,SP,,,,,Y,"//*[@id=""__next""]/div[2]/div[1]/div/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[3]/div/p[1]/a",
+39,SEA,ATT,https://www.att.com/buy/phones/samsung-galaxy-note10-256gb-aura-glow.html,n10_promo_3,SP,,,,,Y,"//*[@id=""__next""]/div[2]/div[1]/div/div/div/div[2]/div[2]/div[2]/div[2]/div/div/div[3]/div/p[2]/a",
+40,SEA,ATT,https://www.att.com/buy/phones/samsung-galaxy-note10plus-256gb-aura-glow.html,n10+_256gb_30_aurablack,SP,,,,,,,
+41,SEA,ATT,https://www.att.com/buy/phones/samsung-galaxy-note10plus-512gb-aura-black.html,n10+_512gb_30_aurablack,SP,,,,,,,
+42,SEA,TMO,https://www.t-mobile.com/,KeyVisual,HP,,,,,,,
+43,SEA,TMO,https://www.t-mobile.com/offers/apple-iphone-deals?icid=_TM_P_19APPLIPHN_0VNWX5VK179MM06Z18319_HP,iPhone_Promo,SP,,,,,,,
+44,SEA,TMO,https://www.t-mobile.com/offers/apple-iphone-deals?icid=_TM_P_19APPLIPHN_0VNWX5VK179MM06Z18319_HP,iPhone_tradein,SP,,,,,Y,"//*[@id=""3266646e3077eecf8a6e340cb8fad7a855c4bae1""]/div[1]/div[2]/p/a",
+45,SEA,TMO,https://www.t-mobile.com/offers/apple-iphone-deals?icid=_TM_P_19APPLIPHN_0VNWX5VK179MM06Z18319_HP,iPhone_tradein,SP,,,,,Y,"//*[@id=""3266646e3077eecf8a6e340cb8fad7a855c4bae1""]/div[1]/div[2]/div[2]/p/a",
+46,SEA,TMO,https://www.t-mobile.com/offers/apple-iphone-deals?icid=_TM_P_19APPLIPHN_0VNWX5VK179MM06Z18319_HP,iPhone_50%,SP,,,,,Y,"//*[@id=""032108f00b129f6ec5e81ea266b4e1ae8d55b00f""]/div[1]/div[2]/p/a",
+47,SEA,TMO,https://www.t-mobile.com/offers/apple-iphone-deals?icid=_TM_P_19APPLIPHN_0VNWX5VK179MM06Z18319_HP,iPhone_50%_2,SP,,,,,Y,"//*[@id=""032108f00b129f6ec5e81ea266b4e1ae8d55b00f""]/div[1]/div[2]/div[2]/p/a",
+48,SEA,TMO,https://www.t-mobile.com/cell-phones,DeviceListing,SP,,,,,Y,,
+49,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11-pro-max?sku=190199380349,lo11ProMax_64gb_24_midnightgreen,SP,,,,,,,
+50,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11-pro-max?sku=190199380387,lo11ProMax_256gb_24_spacegray,SP,,,,,,,
+51,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11-pro-max?sku=190199380424,lo11ProMax_512gb_24_spacegray,SP,,,,,,,
+52,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11-pro-max?sku=190199380424,iPhone_Promo,SP,,,,,Y,"//*[@id=""main-content""]/div/div/ng-component/tmo-view-component/div/div/div/div/product-details-element/div[1]/div[2]/div/div/a",scroll 있음
+53,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11-pro?sku=190199388116,lo11Pro_64gb_24_midnightgreen,SP,,,,,Y,,
+54,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11-pro?sku=190199388154,lo11Pro_256gb_24_midnightgreen,SP,,,,,,,
+55,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11-pro?sku=190199388192,lo11Pro_512gb_24_midnightgreen,SP,,,,,,,
+56,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11?sku=190199219991,lo11_64gb_24_midnightgreen,SP,,,,,,,
+57,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11?sku=190199220058,lo11_128gb_24_midnightgreen,SP,,,,,,,
+58,SEA,TMO,https://www.t-mobile.com/cell-phone/apple-iphone-11?sku=190199220119,lo11_256gb_24_midnightgreen,SP,,,,,,,
+59,SEA,TMO,https://www.t-mobile.com/cell-phone/samsung-galaxy-note10?sku=610214661425,n10_256gb_24_aurawhite,SP,,,,,,,
+60,SEA,TMO,https://www.t-mobile.com/cell-phone/samsung-galaxy-note10?sku=610214661425,n10_256gb_24_aurawhite,SP,,,,,Y,"//*[@id=""main-content""]/div/div/ng-component/tmo-view-component/div/div/div/div/product-details-element/div[1]/div[2]/div/div/a",promotion select
+61,SEA,TMO,https://www.t-mobile.com/cell-phone/samsung-galaxy-note10-plus?sku=610214661395,n10+_256gb_24_aurablack,SP,,,,,,,
+62,SEA,TMO,https://www.t-mobile.com/cell-phone/samsung-galaxy-note10-plus?sku=610214661395,n10+_256gb_24_aurablack,SP,,,,,,,
+63,SEA,TMO,https://www.t-mobile.com/cell-phone/samsung-galaxy-note10-plus?sku=610214661630,n10+_512gb_24_aurablack,SP,,,,,,,
+64,SEA,TMO,https://www.t-mobile.com/cell-phone/samsung-galaxy-note10-plus?sku=610214661630,n10+_512gb_24_aurablack,SP,,,,,Y,"//*[@id=""main-content""]/div/div/ng-component/tmo-view-component/div/div/div/div/product-details-element/div[1]/div[2]/div/div/a",promotion select
+65,SEA,TMO,https://www.t-mobile.com/offers/samsung-phone-deals,Samsung_promo,SP,,,,,,,
+66,SEA,TMO,https://www.t-mobile.com/devices/samsung-galaxy-note-10-and-10-plus?icid=WMM_TMNG_P_19SMSGNT10_UDMU1Q4OFEYW6ZDRK18131,Galaxy_Samsung_Promo,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/?intl=nosplash,KeyVisual,HP,Y,,,,,,슬라이드 있음
+,SEA,BBY,https://www.bestbuy.com/site/electronics/mobile-cell-phones/abcat0800000.c?id=abcat0800000,CellPhonePG,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/iphone/shop-iphone-11-iphone-11-pro-and-iphone-11-pro-max/pcmcat1568147641595.c?id=pcmcat1568147641595,Tradein_offer,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/top-deals/cell-phone-deals/pcmcat1563302848653.c?id=pcmcat1563302848653,CellPhone_deal,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/promo/samsung-phone-offer,Samsung_Offer,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/verizon/verizon-phones/pcmcat211300050002.c?id=pcmcat211300050002,Verizon_Phone,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple-iphone-11-pro-max-64gb-gold-verizon/6341560.p?skuId=6341560,Verizon_lo11ProMax_64gb_24,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple-iphone-11-pro-max-256gb-gold-verizon/6341564.p?skuId=6341564,Verizon_lo11ProMax_256gb_24,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple-iphone-11-pro-max-512gb-gold-verizon/6341568.p?skuId=6341568,Verizon_lo11ProMax_512gb_24,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple-iphone-11-pro-64gb-gold-verizon/6341361.p?skuId=6341361,Verizon_lo11Pro_64gb_24,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple-iphone-11-pro-256gb-gold-verizon/6341550.p?skuId=6341550,Verizon_lo11Pro_256gb_24,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple-iphone-11-pro-512gb-gold-verizon/6341555.p?skuId=6341555,Verizon_lo11Pro_512gb_24,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple/apple-tv-plus-streaming-service/pcmcat1568305412064.c?id=pcmcat1568305412064,Verizon_apple_tv_offer,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple-iphone-11-128gb-black-verizon/6341347.p?skuId=6341347,Verizon_lo11_128gb_24,SP,,,,,,,
+,SEA,BBY,https://www.bestbuy.com/site/apple-iphone-11-256gb-black-verizon/6341352.p?skuId=6341352,Verizon_lo11_256gb_24,SP,,,,,,,
+,,,https://www.bestbuy.com/site/at-t-wireless/at-t-mobile-cell-phones/pcmcat211300050006.c?id=pcmcat211300050006,ATT_Phone,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-max-64gb-midnight-green-at-t/6341281.p?skuId=6341281,ATT_lo11ProMax_64gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-max-256gb-space-gray-at-t/6341322.p?skuId=6341322,ATT_lo11ProMax_256gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-max-512gb-midnight-green-at-t/6341330.p?skuId=6341330,ATT_lo11ProMax_512gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-64gb-midnight-green-at-t/6341309.p?skuId=6341309,ATT_lo11Pro_64gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-256gb-midnight-green-at-t/6341312.p?skuId=6341312,ATT_lo11Pro_256gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-512gb-midnight-green-at-t/6341317.p?skuId=6341317,ATT_lo11Pro_512gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-64gb-black-at-t/6341287.p?skuId=6341287,ATT_lo11_64gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-128gb-black-at-t/6341293.p?skuId=6341293,ATT_lo11_128gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-256gb-black-at-t/6341298.p?skuId=6341298,ATT_lo11_256gb_30,SP,,,,,,,
+,,,https://www.bestbuy.com/site/sprint/sprint-mobile-cell-phones/pcmcat211300050010.c?id=pcmcat211300050010,SPRINT_Phone,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-max-64gb-midnight-green-sprint/6341431.p?skuId=6341431,SPRINT_lo11ProMax_64gb_24,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-max-256gb-midnight-green-sprint/6341478.p?skuId=6341478,SPRINT_lo11ProMax_256gb_24,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-max-512gb-midnight-green-sprint/6341482.p?skuId=6341482,SPRINT_lo11ProMax_512gb_24,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-64gb-midnight-green-sprint/6341462.p?skuId=6341462,SPRINT_lo11Pro_64gb_24,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-256gb-midnight-green-sprint/6341466.p?skuId=6341466,SPRINT_lo11Pro_256gb_24,SP,,,,,,,
+,,,https://www.bestbuy.com/site/apple-iphone-11-pro-512gb-midnight-green-sprint/6341470.p?skuId=6341470,SPRINT_lo11Pro_512gb_24,SP,,,,,,,
+,,,,SPRINT_lo11_64gb_24,SP,,,,,,,
+,,,,SPRINT_lo11_128gb_24,SP,,,,,,,
+,,,,SPRINT_lo11_256gb_24,SP,,,,,,,
